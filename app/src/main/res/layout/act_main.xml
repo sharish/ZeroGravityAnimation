@@ -6,15 +6,15 @@
     android:layout_gravity="top|left"
     >
 
+    <!-- Container layout for stars to fly on -->
+    <!-- This layout is arranged above earth view holder so that stars will fly underneath the earth -->
     <FrameLayout
-        android:id="@+id/animation_holder"
+        android:id="@+id/star_animation_holder"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        >
+        />
 
-
-    </FrameLayout>
-
+    <!-- Earth image container view. -->
     <View
         android:layout_width="200dp"
         android:layout_height="200dp"
@@ -22,5 +22,29 @@
         android:background="@drawable/earth"
         android:layout_centerInParent="true"
         />
+
+    <!-- Container layout for satellite and meteor to fly on -->
+    <!-- This layout is arranged below earth view holder so as meteor and satellite will fly over earth -->
+    <FrameLayout
+        android:id="@+id/animation_bigger_objects_holder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding_large"
+        android:background="@drawable/round_rectangle_white"
+        android:layout_margin="@dimen/margin_normal"
+        android:layout_alignParentBottom="true"
+        android:text="@string/explore"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="@dimen/text_large"
+        android:textColor="@android:color/black"
+
+        />
+
 
 </RelativeLayout>

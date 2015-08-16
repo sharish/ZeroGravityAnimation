@@ -193,8 +193,8 @@ public class ZeroGravityAnimation {
                     @Override
                     public void onAnimationStart(Animation animation) {
 
-                        if(iDupe == 0) {
-                            if(mAnimationListener != null) {
+                        if (iDupe == 0) {
+                            if (mAnimationListener != null) {
                                 mAnimationListener.onAnimationStart(animation);
                             }
                         }
@@ -205,8 +205,8 @@ public class ZeroGravityAnimation {
 
                         layer.destroy();
 
-                        if(iDupe == (mCount - 1)) {
-                            if(mAnimationListener != null) {
+                        if (iDupe == (mCount - 1)) {
+                            if (mAnimationListener != null) {
                                 mAnimationListener.onAnimationEnd(animation);
                             }
                         }

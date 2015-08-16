@@ -29,6 +29,14 @@ public class MainActivity extends Activity {
 
     }
 
+    /**
+     * Animate the bigger objects.
+     * @param resId image resource id of bigger object.
+     * @param duration time duration for animation.
+     * @param from origin direction
+     * @param to destination direction.
+     * @param scale scales the flier
+     */
     public void flyObject(final int resId, final int duration, final Direction from, final Direction to, final float scale) {
 
         ZeroGravityAnimation animation = new ZeroGravityAnimation();
@@ -56,10 +64,15 @@ public class MainActivity extends Activity {
             }
         });
 
-        animation.play(this);
+        ViewGroup container = (ViewGroup) findViewById(R.id.animation_bigger_objects_holder);
+        animation.play(this,container);
 
     }
 
+    /**
+     * Animates the flying stars.
+     * @param resId star image resource id.
+     */
     public void flyStars(final int resId) {
 
         ZeroGravityAnimation animation = new ZeroGravityAnimation();
@@ -88,8 +101,8 @@ public class MainActivity extends Activity {
                                        }
         );
 
-        ViewGroup rootView = (ViewGroup) findViewById(R.id.animation_holder);
-        animation.play(this,rootView);
+        ViewGroup container = (ViewGroup) findViewById(R.id.star_animation_holder);
+        animation.play(this,container);
 
     }
 }
