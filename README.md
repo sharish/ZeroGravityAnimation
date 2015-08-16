@@ -40,7 +40,7 @@ animation.play(this);
   
 
 #####Animation Listener: 
-    Default animation listener can used to collect events of this animation.
+Default animation listener can used to collect events of this animation.
 ````java
 animation.setAnimationListener(new Animation.AnimationListener() {
                                            @Override
@@ -62,7 +62,8 @@ animation.setAnimationListener(new Animation.AnimationListener() {
 ```
 
 #####Animation Object Container Specification:
-    Wanted you animation to take place beneath certain views - like the stars that fly beneath Earth in the above demo? Make sure you design your layouts to have a container layout (FrameLayout) that lies below than the original views and use the following code
+Wanted you animation to take place beneath certain views - like the stars that fly beneath Earth in the above demo? 
+Make sure you design your layouts to have a container layout (FrameLayout) that lies below than the original views and use the following code
     
 ```java
   
