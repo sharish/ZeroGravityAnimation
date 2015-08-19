@@ -2,10 +2,10 @@
     
 Make random object fly on your screen. 
 
-The library helps in easier development of flying random  objects on random directions (or 
+The repo helps in easier development of flying random  objects on random directions (or 
 on specific directions) to give  a goodUI experience for the  user. Specifically made  for 
-gaming  purpose, thelibrary willbe highly useful  for apps that deals  with space  related 
-animations, thus  named as ZeroGravityAnimation. The library  works  with a  class  called
+gaming  purpose, the repo will  be highly useful  for apps that deals  with space  related 
+animations, thus  named as ZeroGravityAnimation. The animation  works with a class  called
 OverTheTopLayer, that makes the object to fly on the top of the screen. A ViewGroup layout 
 can be passed optionally that acts as a container for the animating objects.
 
@@ -71,8 +71,8 @@ Make sure you design your layouts to have a container layout (FrameLayout) that 
   animation.play(this,container);
 ```
 
-###Apps using this library:
-Goldhunt Game|
+###Apps using ZeroGravityAnimation:
+[Goldhunt Game](https://play.google.com/store/apps/details?id=com.cooltechworks.goldhunt)|
 ------------ |
 ![goldhuntdemo](https://cloud.githubusercontent.com/assets/13122232/9293580/3521f486-444e-11e5-9de2-3b9cab9a13f6.gif)|
 
